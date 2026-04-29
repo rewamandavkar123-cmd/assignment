@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+.carousel {
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Elements Styling */
+.session {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding:0px 0px 0.65rem 0rem;
+    margin: 0 1rem 1rem 1rem;
+border: 1px solid #cccccc;
+    text-align: center;
+    margin: 0 auto;
+   
+    p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+   
+}
+
+/* Bootstrap Carousel Styling */
+.carousel {
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+
+    .carousel-indicators {
+        li {
+            background-color: black;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+        }
+    }
+
+    .carousel-control {
+        width: 3rem;font-size: 3rem;
+        margin-top: -3rem;
+
+        i {
+            color: black;
+        }
+    }
+
+    .carousel-inner {
+        margin: 0 0 1rem 0;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+.btn-primary.pink{
+    background-color: rgb(230, 138, 155);
+    color: white; font-weight: bold;
+    border:  rgb(230, 138, 155);
+}
+
+.btn-primary.pink:hover {
+  background-color: rgb(247 115 139);
+  border: 1px solid rgb(247 115 139);
+}
+
+.btn-primary.pink:not(:disabled):not(.disabled).active, .btn-primary.pink:not(:disabled):not(.disabled):active, .show>.btn-primary.pink.dropdown-toggle{
+    background-color: rgb(247 115 139);
+  border: 1px solid rgb(247 115 139); 
+}
+
+.btn-primary.pink.focus, .btn-primary.pink:focus,.btn-primary.pink:not(:disabled):not(.disabled):active {
+    box-shadow: 0 0 0 .2rem rgba(247, 115, 139, 0.6);
+}
+.carousel-item .col-3::after {
+      content: "+";
+    position: absolute;
+    right: -16px;
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+    top: 33%;
+}
+
+/* Remove + from last visible item */
+.carousel-item .col-3:last-child::after {
+  content: "";
+}
+.checkbox{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
